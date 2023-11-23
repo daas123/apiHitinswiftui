@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92EAFD352B0F6C2F00D8A0AE /* LoginVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EAFD342B0F6C2F00D8A0AE /* LoginVIewModel.swift */; };
+		92EAFD372B0F6C3F00D8A0AE /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EAFD362B0F6C3F00D8A0AE /* LoginService.swift */; };
+		92EAFD392B0F6C4D00D8A0AE /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EAFD382B0F6C4D00D8A0AE /* LoginModel.swift */; };
 		92F64C3A2B0F20E90056093F /* apiHitinswiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F64C392B0F20E90056093F /* apiHitinswiftuiApp.swift */; };
-		92F64C3C2B0F20E90056093F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F64C3B2B0F20E90056093F /* ContentView.swift */; };
 		92F64C3E2B0F20EC0056093F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F64C3D2B0F20EC0056093F /* Assets.xcassets */; };
 		92F64C412B0F20EC0056093F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F64C402B0F20EC0056093F /* Preview Assets.xcassets */; };
+		92F64C662B0F5DF90056093F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F64C652B0F5DF90056093F /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92EAFD342B0F6C2F00D8A0AE /* LoginVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVIewModel.swift; sourceTree = "<group>"; };
+		92EAFD362B0F6C3F00D8A0AE /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		92EAFD382B0F6C4D00D8A0AE /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		92EAFD3A2B0F75B000D8A0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		92F64C362B0F20E90056093F /* apiHitinswiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = apiHitinswiftui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F64C392B0F20E90056093F /* apiHitinswiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiHitinswiftuiApp.swift; sourceTree = "<group>"; };
-		92F64C3B2B0F20E90056093F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		92F64C3D2B0F20EC0056093F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92F64C402B0F20EC0056093F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		92F64C652B0F5DF90056093F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		92F64C382B0F20E90056093F /* apiHitinswiftui */ = {
 			isa = PBXGroup;
 			children = (
+				92EAFD3A2B0F75B000D8A0AE /* Info.plist */,
+				92F64C5F2B0F5D5F0056093F /* Services */,
+				92F64C612B0F5D6B0056093F /* Model */,
+				92F64C602B0F5D650056093F /* ViewModel */,
+				92F64C622B0F5D9C0056093F /* View */,
 				92F64C392B0F20E90056093F /* apiHitinswiftuiApp.swift */,
-				92F64C3B2B0F20E90056093F /* ContentView.swift */,
 				92F64C3D2B0F20EC0056093F /* Assets.xcassets */,
 				92F64C3F2B0F20EC0056093F /* Preview Content */,
 			);
@@ -65,6 +76,38 @@
 				92F64C402B0F20EC0056093F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		92F64C5F2B0F5D5F0056093F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				92EAFD362B0F6C3F00D8A0AE /* LoginService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		92F64C602B0F5D650056093F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				92EAFD342B0F6C2F00D8A0AE /* LoginVIewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		92F64C612B0F5D6B0056093F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92EAFD382B0F6C4D00D8A0AE /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92F64C622B0F5D9C0056093F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92F64C652B0F5DF90056093F /* LoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92F64C3C2B0F20E90056093F /* ContentView.swift in Sources */,
+				92EAFD392B0F6C4D00D8A0AE /* LoginModel.swift in Sources */,
+				92F64C662B0F5DF90056093F /* LoginView.swift in Sources */,
+				92EAFD352B0F6C2F00D8A0AE /* LoginVIewModel.swift in Sources */,
 				92F64C3A2B0F20E90056093F /* apiHitinswiftuiApp.swift in Sources */,
+				92EAFD372B0F6C3F00D8A0AE /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +315,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"apiHitinswiftui/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = apiHitinswiftui/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +344,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"apiHitinswiftui/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = apiHitinswiftui/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
