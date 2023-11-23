@@ -8,7 +8,6 @@
 import Foundation
 import Combine
 class HomeService{
-    
     func fetchList() -> AnyPublisher<[UserData],Error>{
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else{
             return Fail(error: URLError(.badURL)).eraseToAnyPublisher()

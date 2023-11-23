@@ -6,9 +6,10 @@
 //
 
 import Foundation
-struct UserData: Codable {
+struct UserData: Codable,Identifiable {
+    let uid = UUID()
     let id: Int
-    let name, username, email: String
+    var name, username, email: String
     let address: Address
     let phone, website: String
     let company: Company

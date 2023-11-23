@@ -9,32 +9,28 @@
 import Foundation
 import Combine
 
-import Foundation
-import Combine
 
-class HomeViewModel: ObservableObject {
-    @Published var users: [UserData] = []
-    private var cancellables: Set<AnyCancellable> = []
+class HomeViewModel : ObservableObject{
+    @Published var user : [UserData] = []
+    var cancellable : Set<AnyCancellable> = []
+    let userService = HomeService()
     
-    private let userService = HomeService()
-    
-    init() {
-        fetchUsers()
-    }
-    
-    func fetchUsers() {
-        userService.fetchUsers()
+    func fetchUsers(){
+        userService.fetchList()
+            
             .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { completion in
-                switch completion {
+            .sink { complition in
+                switch complition{
                 case .finished:
                     break
                 case .failure(let error):
-                    print("Error: \(error)")
+                    print("Erro is \(error)")
                 }
-            }, receiveValue: { [weak self] users in
-                self?.users = users
-            })
-            .store(in: &cancellables)
+            } receiveValue: {[weak self] output in
+                self?.user = output
+            }
+            .store(in: &cancellable)
+
+            
     }
 }
